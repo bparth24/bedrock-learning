@@ -15,7 +15,7 @@ The `example1-basic` project demonstrates a basic setup of the Bedrock framework
 
 ### What I Learned
 
-1. **Application Lifecycle**: Learned how Bedrock manages the application lifecycle through events like `bedrock.init`, `bedrock.start`, and `bedrock.started`.
+1. **Application Lifecycle**: Learned how Bedrock manages the application lifecycle through events like `bedrock.init`, `bedrock.start`, `bedrock.ready` and `bedrock.started`.
 2. **Logging**: Observed how to use Bedrock's logging system to track application progress and debug issues.
 3. **Modular Design**: Understood how Bedrock modules can be added to extend functionality.
 4. **Integration**: Learned how to integrate MongoDB and Express into a Bedrock application.
@@ -126,22 +126,23 @@ While the `engines` field in `package.json` specifies `>=18.0.0`, this project i
 3. **Expected Output**:
 
    ```bash
-   parthbhatt@localhost example1-basic % npm start
+    parthbhatt@localhost example1-basic % npm start
 
-   > example1-basic@1.0.0 start
-   > node app.js
+    > example1-basic@1.0.0 start
+    > node app.js
 
-   2025-05-09T16:16:30.895Z - info: [bedrock/primary] starting process "bedrock1d" workerPid=undefined, workerId=undefined, details={
-   "pid": 50963
-   }
-   2025-05-09T16:16:30.898Z - info: [bedrock/primary] started workerPid=undefined, workerId=undefined, details={
-   "timeMs": 25
-   }
-   2025-05-09T16:16:31.026Z - info: [bedrock/worker] starting process "bedrock1d-worker" workerPid=50964, workerId=b120cd44305305e6
-   2025-05-09T16:16:31.027Z - info: Initializing the app... workerPid=50964, workerId=b120cd44305305e6
-   2025-05-09T16:16:31.027Z - info: Starting application... workerPid=50964, workerId=b120cd44305305e6
-   2025-05-09T16:16:31.027Z - info: Application fully started! workerPid=50964, workerId=b120cd44305305e6
-   2025-05-09T16:16:31.027Z - info: [bedrock/worker] started workerPid=50964, workerId=b120cd44305305e6, details={
-   "timeMs": 18
-   }
+    2025-05-09T16:27:17.719Z - info: [bedrock/primary] starting process "bedrock1d" workerPid=undefined, workerId=undefined, details={
+      "pid": 63313
+    }
+    2025-05-09T16:27:17.723Z - info: [bedrock/primary] started workerPid=undefined, workerId=undefined, details={
+      "timeMs": 30
+    }
+    2025-05-09T16:27:17.851Z - info: [bedrock/worker] starting process "bedrock1d-worker" workerPid=63353, workerId=823dc1b96b45efe5
+    2025-05-09T16:27:17.852Z - info: Initializing the app... workerPid=63353, workerId=823dc1b96b45efe5
+    2025-05-09T16:27:17.852Z - info: Starting application... workerPid=63353, workerId=823dc1b96b45efe5
+    2025-05-09T16:27:17.852Z - info: Application ready... workerPid=63353, workerId=823dc1b96b45efe5
+    2025-05-09T16:27:17.852Z - info: Application fully started! workerPid=63353, workerId=823dc1b96b45efe5
+    2025-05-09T16:27:17.852Z - info: [bedrock/worker] started workerPid=63353, workerId=823dc1b96b45efe5, details={
+      "timeMs": 18
+    }
    ```

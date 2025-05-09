@@ -20,7 +20,7 @@ bedrock.events.on('bedrock.start', () => {
   logger.info('Starting application...');
 });
 
-bedrock.events.on('bedrocl.ready', () => {
+bedrock.events.on('bedrock.ready', () => {
   const logger = bedrock.loggers.get('app');
   logger.info('Application ready...');
 });
