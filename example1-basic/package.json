@@ -1,0 +1,27 @@
+{
+  "name": "example1-basic",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Parth Bhatt",
+  "license": "ISC",
+  "description": "Basic Bedrock Installation",
+  "dependencies": {
+    "@bedrock/core": "^6.3.0",
+    "bedrock-express": "^6.4.1",
+    "bedrock-mongodb": "^8.5.0",
+    "bedrock-server": "^3.2.1",
+    "bedrock-session-mongodb": "^4.3.1",
+    "bedrock-validation": "^5.6.3",
+    "bedrock-views": "^8.1.0",
+    "bedrock-webpack": "^4.2.0"
+  }
+}
