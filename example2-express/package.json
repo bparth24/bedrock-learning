@@ -1,0 +1,26 @@
+{
+  "name": "example2-express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bedrock",
+    "express"
+  ],
+  "author": "Parth Bhatt",
+  "license": "ISC",
+  "description": "Simple Bedrock Express Application Example",
+  "dependencies": {
+    "@bedrock/core": "^6.3.0",
+    "@bedrock/server": "^5.1.0",
+    "bedrock-express": "^6.4.1",
+    "bedrock-server": "^3.2.1"
+  }
+}
